@@ -28,6 +28,23 @@ import UIKit
  
  ![FloatingPoint](floating-point-types.png)
  */
+MemoryLayout<Float32>.size
+MemoryLayout<Float64>.size
+//MemoryLayout<Double64>.size  //Undeclared type Double64
+MemoryLayout<Float64>.size
+MemoryLayout<Float>.size
+MemoryLayout<Double>.size
+
+// Float (4) vs Int (8)
+// 메모리 laytout 크기는 Float 가 Int 보다 적으나, 더 큰 범위의 값을 저장
+// 지수.가수 로 나누어 저장
+// Float 는 메모리 크기에 따라 정확성 보장 (최대 6자리까지 정합성 보장)
 
 // 3.141592653589793238462643383279502884197169
-
+let piFloat: Float = 3.141592653589793238462643383279502884197169
+let piDouble : Double = 3.141592653589793238462643383279502884197169
+// 자료형을 지정하지 않으면, 모든 실수는 Double 로 저장됨
+let pi = 3.141592653589793238462643383279502884197169
+print(piFloat)
+print(piDouble)
+print(pi)

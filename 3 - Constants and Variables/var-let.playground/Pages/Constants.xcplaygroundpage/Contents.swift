@@ -29,4 +29,8 @@ import UIKit
  ## Syntax
  ![Constants Syntax](syntax-let.png)
  */
+var name = "Yoona"
+print(name)
 
+name
+name = "Steve"

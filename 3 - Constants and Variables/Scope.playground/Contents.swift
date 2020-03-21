@@ -25,27 +25,41 @@
  */
 
 // #1
-
-
+let g1 = 123
+print(g1)
+//print(g2) Error
 
 func doSomething() {
    // #3
-   
+    print(g1)
+    print(g2)
+    let l1 = 222
+
    if true {
       // #4
-   }
+        l1
+        let g1 = 777
+    
+        let l3 = 444
+    }
    
    // #5
+    let l2 = 333
 }
 
 
 // #2
+let g2 = 321
+print(g2)
 
 struct Scope {
    // #6
-   
+
    func doSomething() {
       // #7
+      print(g1)
+      print(g2)
+
    }
 }
 

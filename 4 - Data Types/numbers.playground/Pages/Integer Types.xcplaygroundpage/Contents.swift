@@ -28,23 +28,39 @@ import UIKit
  
  ![IntegerTypes](integer-types.png)
  */
+Int8.min
+Int8.max
+Int64.min
+Int64.max
 
-
-
+MemoryLayout<Int8>.size //8*1
+MemoryLayout<Int16>.size //8*2
+MemoryLayout<Int32>.size //8*4
+MemoryLayout<Int64>.size //8*8
 
 /*:
  ## Signed vs Unsigned
  
  ![SignedUnsigned](signed-unsigned.png)
  */
-
-
+Int8.min
+Int8.max
+UInt8.min
+UInt8.max
 
 
 /*:
  ## Int & UInt
  */
+//32bit => Int32, 64bit => Int64
+MemoryLayout<Int>.size
+Int.min
+Int.max
+MemoryLayout<UInt>.size
+UInt.min
+UInt.max
 
-
+let num = 123
+type(of: num)
 
 //: [Next](@next)

@@ -26,15 +26,30 @@ import UIKit
  ## Syntax
  ![Variables Syntax](syntax-var.png)
  */
+var name = "Swift"
+var year = 2018
+var valid = false
 
+var x = 0.0, y = 0.0, z = 0.0
 
+name
+print(name)
+print(year)
+print(valid)
+print(name, year, valid, x, y, z)
 
 /*:
  ## Syntax
  ![Variables Syntax](syntax-var-new-value.png)
  */
+name = "Steve"
+name = "Yoona"
 
+print(name)
 
-
-
+var anotherName = name
+//anotherName = "Tim"
+//name = "Tim"
+name.append("Tim")
+print(name, anotherName)
 //: [Next](@next)

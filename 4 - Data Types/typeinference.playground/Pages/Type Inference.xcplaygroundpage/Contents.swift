@@ -24,10 +24,28 @@ import UIKit
 /*:
  # Type Inference
  */
+//Type Inference : 타입 추론
 
+let num = 123
+type(of: num) //Int.Type
 
+let temp = 11.2
+type(of: temp) //Double.Type
 
+let str = "Swift"
+type(of: str) //String.Type
 
+let a = true
+let b = false
+type(of: a) //Bool.Type
+type(of: b) //Bool.Type
 
+//let value //error: type annotation missing in pattern
+/* Compiler
+ : value 저장할 메모리 공간 확보 > 자료형 파악
+    if 자료형 선언 여부 확인
+    else if 초기값 저장 여부 확인(형식 추론을 판단)
+    else Error
+*/
 
 //: [Next](@next)

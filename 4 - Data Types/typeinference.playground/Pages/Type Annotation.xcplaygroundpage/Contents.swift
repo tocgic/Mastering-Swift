@@ -28,7 +28,17 @@ import UIKit
  ## Syntax
  ![TypeAnnotation](type-annotation.png)
  */
+//자료형 직접 지정 (Type Annotation)
 
+let num: Int = 123
 
+let value: Double
+value = 12.3
+
+/* Type Annotation 을 사용하는 경우
+ - 선언과 초기화 분리 가능
+ - Int, Double, String, Bool 이 아닌 다른 자료형으로 저장시
+ - 형식 추론을 사용하게 되면 complie 시간이 길어짐. compile 시간을 단축하기 위해 사용하기도 함
+ */
 
 //: [Next](@next)

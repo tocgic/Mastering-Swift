@@ -24,13 +24,25 @@ import UIKit
 /*:
  # Strings
  */
-
-
-
+//Have a noce day //Error
+"Have a noce day"
+"123" //String
+"1" //String
+let str = "1"
+type(of: str) //String.Type
 /*:
  # Character
  */
+//let ch = '1' //error: single-quoted string literal found, use '"'
+let ch: Character = "1"
+type(of: ch) //Character.Type
+MemoryLayout<Character>.size
+MemoryLayout<String>.size
+MemoryLayout<Int>.size
 
+//let doubleCh: Character = "AA" //error: cannot convert value of type 'String' to specified type 'Character'
 
+//let emptyCh: Character = "" //error: cannot convert value of type 'String' to specified type 'Character'
+let empthCh: Character = " "
 
-
+//문자로 사용하려면, Character 자료형을 사용해야 함

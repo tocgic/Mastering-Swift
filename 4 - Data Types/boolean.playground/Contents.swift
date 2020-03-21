@@ -24,5 +24,19 @@ import UIKit
 /*:
  # Boolean
  */
+let isValid = true
+let validBool: Bool = false
+//let validError: Bool = 0 //Cannot convert value of type 'Int'...
+
+let str = ""
+str.isEmpty
+
+if isValid {
+    
+}
+
+while !isValid {
+    
+}
 
 

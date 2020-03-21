@@ -24,12 +24,36 @@ import UIKit
 /*:
  # Type Safety
  */
+//형식안정성을 보장하기 위해 자료형을 엄격히 분리
 
+//let str: String = 123 //error: cannot convert value of type 'Int' to specified type 'String'
+//let num: Int = 12.34 //error: cannot convert value of type 'Double' to specified type 'Int'
 
+/*
+let a = 7
+let b: Int8 = a //a (Int), b (Int8)
+error: cannot convert value of type 'Int' to specified type 'Int8'
+ */
 
+/*
+let a = 7
+let b: Int64 = a //a (Int), b (Int64)
+error: cannot convert value of type 'Int' to specified type 'Int64'
+ */
 
+//자료형의 이름이 다르면 허용하지 않음.
 
+let a = 12
+let b = 34.56
+//let result = a + b //error: binary operator '+' cannot be applied to operands of type 'Int' and 'Double'
 
+let rate: Double = 1.94
+let amt = 10_000_000
+//let result = rate * amt //error: binary operator '*' cannot be applied to operands of type 'Double' and 'Int'
+let result = rate * Double(amt)
+
+Int(rate * Double(amt)) //Double * Double > Int
+Int(rate) * amt //Int * Int
 
 
 

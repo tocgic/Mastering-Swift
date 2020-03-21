@@ -24,6 +24,13 @@ import UIKit
 /*:
  # Number Literals
  */
+0.123
+1.23e4
+0xAp2
+1_000_000
 
-
+10      //10진수
+0b1010  //2진수
+0o12    //8진수
+0xA     //16진수
 //: [Next](@next)

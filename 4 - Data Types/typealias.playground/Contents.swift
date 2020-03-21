@@ -26,12 +26,18 @@ import UIKit
  ## Syntax
  ![typealias](typealias.png)
  */
+/*
+기본자료형에 새로운 이름(별칭)을 추가
 
+- 일관성 유지를 위해 UpperCamelCase 규칙으로 작성
+*/
 
+let lat: Double = 12.34
+let lon: Double = 56.78
 
-
-
-
+typealias Coordinate = Double
+let lat2: Coordinate = 12.34
+let lon2: Coordinate = 56.78
 
 
 
