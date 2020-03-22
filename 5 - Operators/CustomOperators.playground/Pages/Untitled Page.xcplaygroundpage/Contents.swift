@@ -33,14 +33,33 @@ import UIKit
  
  ![custom-operator](custom-operator.png)
  */*/
+prefix operator +++
+extension Int {
+    static prefix func +++(num: inout Int) -> Int {
+        num += 2
+        return num
+    }
+}
 
+var a = 1
+var b = +++a
 
+precedencegroup MyPrecedence {
+    higherThan: AdditionPrecedence
+}
 
+//infix operator *+*
+//infix operator *+*: MultiplicationPrecedence
+infix operator *+*: MyPrecedence
+extension Int {
+    static func *+*(left: Int, right: Int) -> Int {
+        return (left * right) + (left * right)
+    }
+}
 
-
-
-
-
+1 *+* 2
+//1 *+* 2 + 3 // error: adjacent operators are in unordered precedence groups 'DefaultPrecedence' and 'AdditionPrecedence'
+1 *+* 2 + 3
 
 
 

@@ -25,6 +25,11 @@ import UIKit
 /*:
  # Overflow Operators
  */
+Int8.min
+Int8.max
+
+//let num: Int8 = Int8.max + 1 // error: arithmetic operation '127 + 1' (on type 'Int8') results in an overflow
+
 
 
 
@@ -34,27 +39,41 @@ import UIKit
  a &+ b
  ````
  */
-
-
-
+Int8.min
+let a: Int8 = Int8.max // 127
+let b: Int8 = a &+ 1 // -128
+/*
+01111111
+        &+ 1
+10000000
+ */
 /*:
  ## Overflow Subtraction Operator
  ````
  a &- b
  ````
  */
+let c: Int8 = Int8.min
+let d: Int8 = c &- 1
 
-
-
+let c1: UInt8 = UInt8.min
+let d1: UInt8 = c1 &- 1
+UInt8.max
 /*:
  ## Overflow Multiplication Operator
  ````
  a &* b
  ````
  */
+let e: Int8 = Int8.max &* 2
 
-
-
+/*
+01111111
+        &* 2
+11111110
+        2의보수 (~ + 1)
+00000010
+ */
 
 
 

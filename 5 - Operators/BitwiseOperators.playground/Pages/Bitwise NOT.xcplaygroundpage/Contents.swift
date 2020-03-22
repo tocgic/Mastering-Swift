@@ -28,8 +28,9 @@ import UIKit
  ````
  ![not](not.png)
  */
-
-
+let a: UInt8 = 0b0000_0010
+~a
+0b1111_1101
 
 
 //: [Next](@next)

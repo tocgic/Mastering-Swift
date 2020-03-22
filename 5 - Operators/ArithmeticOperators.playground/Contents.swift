@@ -24,6 +24,9 @@ import UIKit
 /*:
  # Arithmetic Operators
  */
+// 산술연산자
+let a = 12
+let b = 34
 
 
 
@@ -33,8 +36,9 @@ import UIKit
  +a
  ````
  */
-
-
+//단항연산자
++a
++b
 
 /*:
  ## Addition Operator
@@ -42,7 +46,8 @@ import UIKit
  a + b
  ````
  */
-
+//이항연산자
+a + b
 
 
 /*:
@@ -51,7 +56,7 @@ import UIKit
  -a
  ````
  */
-
+-a
 
 
 /*:
@@ -60,7 +65,7 @@ import UIKit
  a - b
  ````
  */
-
+a - b
 
 
 /*:
@@ -69,7 +74,7 @@ import UIKit
  a * b
  ````
  */
-
+a * b
 
 
 /*:
@@ -78,22 +83,32 @@ import UIKit
  a / b
  ````
  */
+a / b
+b / a
+let c = Double(a)
+let d = Double(b)
 
+c / d
+d / c
 
-
+Double(a) / Double(b)
+Double(b) / Double(a)
 /*:
  ## Remainder Operator (Modulo Operator)
  ````
  a % b
  ````
  */
-
-
+a % b
+//c % d // error: '%' is unavailable: For floating point numbers use truncatingRemainder instead
+c.truncatingRemainder(dividingBy: d) // Modulo 연산자는 정수만 지원
 
 /*:
  ## Overflow
  */
-
+//let num: Int8 = 9 * 9 * 9 // error: arithmetic operation '81 * 9' (on type 'Int8') results in an overflow
+let num: Int = 9 * 9 * 9
+//Overflow 가 필요한경우
 
 
 

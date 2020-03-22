@@ -26,7 +26,7 @@ import Foundation
 /*:
  # Compound Assignment Operators
  */
-
+// 복합 할당 연산자
 /*:
  ## Addition Assignment Operator
  ````
@@ -34,7 +34,13 @@ import Foundation
  a = a + b
  ````
  */
+var a = 1
+var b = 2
+a = a + b
 
+a = 1
+b = 2
+a += b
 
 
 /*:
@@ -44,7 +50,13 @@ import Foundation
  a = a - b
  ````
  */
+a = 1
+b = 2
+a = a - b
 
+a = 1
+b = 2
+a -= b
 
 
 /*:
@@ -54,6 +66,13 @@ import Foundation
  a = a * b
  ````
  */
+a = 1
+b = 2
+a = a * b
+
+a = 1
+b = 2
+a *= b
 
 
 
@@ -64,6 +83,13 @@ import Foundation
  a = a / b
  ````
  */
+a = 4
+b = 2
+a = a / b
+
+a = 4
+b = 2
+a /= b
 
 
 
@@ -74,6 +100,13 @@ import Foundation
  a = a % b
  ````
  */
+a = 4
+b = 2
+a = a % b
+
+a = 4
+b = 2
+a %= b
 
 
 /*:
@@ -83,7 +116,16 @@ import Foundation
  a = a & b
  ````
  */
+var c: UInt8
+var d: UInt8
 
+c = 0b0000_1010
+d = 0b0000_0010
+c = c & d // 2
+
+c = 0b0000_1010
+d = 0b0000_0010
+c &= d
 
 
 /*:
@@ -93,6 +135,13 @@ import Foundation
  a = a | b
  ````
  */
+c = 0b0000_1010
+d = 0b0000_0010
+c = c | d // 10
+
+c = 0b0000_1010
+d = 0b0000_0010
+c |= d
 
 
 
@@ -103,6 +152,13 @@ import Foundation
  a = a ^ b
  ````
  */
+c = 0b0000_1010
+d = 0b0000_0010
+c = c ^ d // 8
+
+c = 0b0000_1010
+d = 0b0000_0010
+c ^= d
 
 
 
@@ -113,7 +169,11 @@ import Foundation
  a = a << b
  ````
  */
+c = 0b0000_1010
+c = c << 1 // 20
 
+c = 0b0000_1010
+c <<= 1
 
 
 /*:
@@ -123,6 +183,11 @@ import Foundation
  a = a >> b
  ````
  */
+c = 0b0000_1010
+c = c >> 1 // 5
+
+c = 0b0000_1010
+c >>= 1
 
 
 

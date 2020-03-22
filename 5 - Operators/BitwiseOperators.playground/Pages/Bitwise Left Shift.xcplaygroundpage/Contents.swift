@@ -30,8 +30,12 @@ import Foundation
  ````
  ![lshift](lshift.png)
  */
+let a: UInt8 = 0b0010_0010
+a << 1
+0b0100_0100
 
-
+a << 2
+0b1000_1000
 
 
 //: [Next](@next)

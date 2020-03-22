@@ -24,15 +24,20 @@ import UIKit
 /*:
  # Comparison Operators
  */
+//비교연산자 => 이항연산자 이며, 결과는 Bool
 
-
+let a = 10
+let b = 20
 /*:
  ## Equal to Operator
  ````
  a == b
  ````
  */
-
+a == b
+"swift" == "Swift"
+let c = 12.34
+//a == c // error: binary operator '==' cannot be applied to operands of type 'Int' and 'Double'
 
 
 /*:
@@ -41,6 +46,7 @@ import UIKit
  a != b
  ````
  */
+a != b
 
 
 
@@ -50,8 +56,14 @@ import UIKit
  a > b
  ````
  */
-
-
+a > b
+b > a
+10 > 10
+"swift" > "Swift" //ASCII or UniCode 사용됨
+let ch_A: Character = "A"
+let ch_a: Character = "a"
+ch_A.asciiValue
+ch_a.asciiValue
 
 /*:
  ## Greater than or equal to Operator
@@ -59,7 +71,10 @@ import UIKit
  a >= b
  ````
  */
+a >= b
 
+7 > 7
+7 >= 7
 
 
 /*:
@@ -68,7 +83,7 @@ import UIKit
  a < b
  ````
  */
-
+a < b
 
 
 /*:
@@ -77,7 +92,7 @@ import UIKit
  a <= b
  ````
  */
-
+a <= b
 
 
 

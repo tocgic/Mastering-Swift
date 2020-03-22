@@ -30,16 +30,26 @@ import Foundation
  ````
  ![rshift](rshift.png)
  */
-
-
-
+let a:UInt8 = 0b0010_0010
+a >> 1
+0b0001_0001
+a >> 2
+0b0000_1000
+//Uint 논리 Shift
 
 /*:
  ## Arithmetic Shift
  ![ashift](ashift.png)
  */
-
-
+// 산술 shift (Sign bit 값을 사용)
+let b:Int8 = -0b0000_1010 //1111_0110
+b >> 1
+/*
+1111_0110
+1111_1011
+        ~ +1
+-0000_0101 (-5)
+*/
 
 
 //: [Next](@next)
