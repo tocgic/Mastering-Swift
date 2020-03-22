@@ -26,7 +26,20 @@ import UIKit
  ## Syntax
  ![Syntax](syntax.png)
  */
+//삼항연산자 (피연산자 3개)
 
+let hour: Int = 12
+
+hour < 12 ? "am" : "pm"
+
+if hour < 12 {
+    "am"
+} else {
+    "pm"
+}
+
+hour < 11 ? "Good Morning" :
+    hour < 17 ? "Good Afternoon" : "Good Evening"
 
 
 

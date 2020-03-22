@@ -30,7 +30,10 @@ import Foundation
  ````
  ![xor](xor.png)
  */
-
+let a: UInt8 = 0b0010_0011
+let b: UInt8 = 0b0001_1010
+a ^ b
+0b0011_1001
 
 
 

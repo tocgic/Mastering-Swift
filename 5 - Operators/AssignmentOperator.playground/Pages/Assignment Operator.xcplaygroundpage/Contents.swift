@@ -27,7 +27,23 @@ import UIKit
  a = b
  ````
  */
+//할당 연산자
 
+let a: Int = 12
+var b: Int = 34
+b = a
 
+/*
+if b = 0 { // error: use of '=' in a boolean context, did you mean '=='?
+    
+}*/
 
+/*
+var c: Bool = false
+if c = true { // error: use of '=' in a boolean context, did you mean '=='?
+    
+}*/
+
+// lvalue : 할당연산자 양쪽에 올 수 있다.
+// rvalue : 할당연산자 오른쪽에만 올 수 있다.
 //: [Next](@next)

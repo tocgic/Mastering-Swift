@@ -24,8 +24,12 @@ import UIKit
 /*:
  # Range Operators
  */
+// 범위 연산자
 
-
+/*
+1 ~ 5 // error: '~' is not a binary operator
+4 ~ 2 // error: '~' is not a binary operator
+*/
 /*:
  ## Closed Range Operator
  ````
@@ -34,22 +38,66 @@ import UIKit
  ...a
  ````
  */
+/* Closed Range Operator 에서는 upperBound 가 범위에 포함된다. */
 
+1 ... 10 //upperBound 10 (범위에 포함)
+//10 ... 1 // error: Can't form Range with upperBound < lowerBound
+(1 ... 10).reversed()
+12.34 ... 56.78
 
+var sum = 0
+for num in 1 ... 10 {
+    num
+    sum += num
+}
+sum
 
+let list = ["A", "B", "C", "D", "E"]
+list[2...]
+list[...2]
 
+/* 무한 loop
+for num in 1... {
+    print(num)
+}*/
 /*:
- ## Half-Opern Range Operator
+ ## Half-Open Range Operator
  ````
  a ..< b
  ..<a
  ````
  */
+sum = 0
+for num in 1 ..< 10 {
+    sum += num
+}
+sum
+
+list
+list[..<2]
+list[1 ..< 2]
 
 
+let range: ClosedRange = 0 ... 5
+type(of: range)
+range.contains(7)
+range.contains(5)
 
+let rangeHalf = 0 ..< 5
+type(of: rangeHalf)
+rangeHalf.contains(5)
 
+let rangePartial = ...5 // PartialRangeThrough<Int>
+type(of: rangePartial)
+rangePartial.contains(5) // true
+rangePartial.contains(-1) // true
+rangePartial.contains(Int.min) // true
 
+let rangePartialUpTo = ..<5 // PartialRangeUpTo<Int>
+type(of: rangePartialUpTo)
+rangePartialUpTo.contains(5) // false
+rangePartialUpTo.contains(-1) // true
+rangePartialUpTo.contains(Int.min) // true
 
 
 

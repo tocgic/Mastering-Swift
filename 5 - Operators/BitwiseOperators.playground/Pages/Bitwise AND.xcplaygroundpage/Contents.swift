@@ -30,9 +30,12 @@ import Foundation
  ````
  ![and](and.png)
  */
+0b0010_0011 & 0b0001_1010
 
-
-
+let a: UInt8 = 0b0010_0010
+let b: UInt8 = 0b1100_1110
+a & b
+0b0000_0010
 
 
 

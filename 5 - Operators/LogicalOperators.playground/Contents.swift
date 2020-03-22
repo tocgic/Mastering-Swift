@@ -24,7 +24,9 @@ import UIKit
 /*:
  # Logical Operators
  */
-
+//논리 연산자
+//참과 거짓 구분
+//피연산자 & 연산 결과 모두 Bool
 
 /*:
  ## Logical NOT Operators
@@ -32,25 +34,42 @@ import UIKit
  !a
  ````
  */
+true
+!true
 
+let a: Int = 12
+let b: Int = 34
 
-
+a < b
+!(a < b)
 /*:
  ## Logical AND Operators
  ````
  a && b
  ````
  */
+a > 30
+b % 2 == 0
+a > 30 && b % 2 == 0
 
-
-
+true && true
+true && false
+false && true
+false && false
 /*:
  ## Logical OR Operators
  ````
  a || b
  ````
  */
+a > 30
+b % 2 == 0
+a > 30 || b % 2 == 0
 
+true || true
+true || false
+false || true
+false || false
 
 
 
