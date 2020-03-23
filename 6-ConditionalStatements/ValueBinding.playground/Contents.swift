@@ -26,8 +26,33 @@ import UIKit
  ## Syntax
  ![value-binding](value-binding.png)
  */
+let a = 101
+
+switch a {
+case var x where x > 100:
+    x *= 2
+    print(x)
+default:
+    break
+}
 
 
+let pt = (1, 2)
+type(of: pt)
+
+switch pt {
+case let(x, y):
+    print(x, y)
+    fallthrough
+case (let x, let y):
+    print(x, y)
+    fallthrough
+case (let x, var y):
+    print(x, y)
+    fallthrough
+case let(x, _):
+    print(x)
+}
 
 
 

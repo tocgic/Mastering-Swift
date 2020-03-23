@@ -27,6 +27,7 @@ import Foundation
 /*:
  # Interval Matching
  */
+//범위 매칭
 
 let temperature = -8
 

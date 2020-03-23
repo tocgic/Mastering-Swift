@@ -26,13 +26,33 @@ import UIKit
  ## Syntax
  ![if](if.png)
  */
+let id = "root"
+let password = "1234qwer"
 
+if id == "root" {
+    print("valid id")
+}
 
+if password == "1234qwer" {
+    print("valid password")
+}
 
+if id == "root" && password == "1234qwer" {
+    print("go to admin page")
+}
+//print("incorrect value")
+if id != "root" || password != "1234qwer" {
+    print("incorrect value")
+}
 /*:
  ## Syntax
  ![if-else](if-else.png)
  */
+if id == "root" && password == "1234qwer" {
+    print("go to admin page")
+} else {
+    print("incorrect value")
+}
 
 
 
@@ -42,11 +62,34 @@ import UIKit
  ## Syntax
  ![if-elseif-else](if-elseif-else.png)
  */
+var num = 12
+if num >= 0 {
+    print("positive number or zero")
+    if num % 2 == 0 {
+        print("positive even number")
+    } else {
+        print("positive odd number")
+    }
+} else {
+    print("negative number")
+}
 
 
-
-
-
+num = 500
+//if num > 0 {
+//    print("positive number")
+//} else if num > 10 {
+//    print("positive number over 10")
+//} else if num > 100 {
+//    print("positive number over 100")
+//}
+if num > 100 {
+    print("positive number over 100")
+} else if num > 10 {
+    print("positive number over 10")
+} else if num > 0 {
+    print("positive number")
+}
 
 
 

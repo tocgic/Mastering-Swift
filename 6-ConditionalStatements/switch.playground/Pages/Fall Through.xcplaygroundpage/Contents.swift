@@ -26,15 +26,17 @@ import Foundation
 /*:
  # Fall Through
  */
+//인근의 다음 코드 블럭을 조건을 무시하고 수행
 
 let num = 2
 
 switch num {
 case 1:
    print("one")
+    fallthrough
 case 2:
    print("two")
-   fallthrough
+    fallthrough
 case 3:
    print("three")
 default:
